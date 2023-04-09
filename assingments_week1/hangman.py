@@ -86,7 +86,7 @@ def game_loop():
     used_letters = []
     switch = 1
     word = word_chosser(word_list)
-    discovered_letters = ["_" for i in range(len(word))]
+    discovered_letters = ["_"]*len(word)
 
     while switch:
         print_tries(tries)
@@ -107,8 +107,10 @@ def main():
     game_loop()
     return 0
 
+#Actual instance of the game
 main()
-# Output
+
+#Output
 '''
 You have 6 tries left.                                                                                                                                           
 Used letters:                                                                                                                                                    
